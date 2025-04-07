@@ -6,16 +6,30 @@
   }
   
   nav {
-    position: fixed; /* ทำให้แถบลอยอยู่กับที่ */
-    top: 0; /* ชิดขอบบน */
-    width: 100%; /* กว้างเต็มหน้าจอ */
-    z-index: 999; /* ซ้อนอยู่ด้านบนสุด */
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 999; 
     background-color: rgba(44, 62, 80, 0.85); 
     color: white;
     /* background: linear-gradient(to right, #2C3E50, #34495E);   */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     padding: 10px 0;
   }
+
+
+  .background-gradient {
+    background: linear-gradient(45deg, rgb(196, 104, 61), rgb(155, 88, 175), rgb(206, 107, 15));
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
   body {
     background-image: url(img2/fabrizio-conti-rMWmDMeaoBk-unsplash.jpg);
     background-size: cover;
