@@ -1,0 +1,233 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+  }
+  
+  body {
+    background-color: #e9f7ff;
+  }
+  
+  nav {
+    background: linear-gradient(to right, #1E90FF, #87CEFA, #d1f2ff);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
+  
+  .top {
+    display: inline-block;
+    border-radius: 15px;
+    padding: 15px 25px;
+    transition: 0.3s;
+  }
+  
+  .top:hover {
+    background-color: aliceblue;
+  }
+  
+  .top:hover a {
+    color: rgb(0, 0, 0);
+  }
+  
+  /* แนะนำตัว */
+  .introduce {
+    margin: 20px auto;
+    max-width: 750px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 40px 20px;
+    animation: fadeIn 0.8s ease;
+  }
+  
+  .introduce h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .introduce h2 {
+    font-size: 26px;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .introduce p {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 25px;
+  }
+  
+  .introduce img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .introduce img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* POPUP */
+  .popup {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 999;
+  }
+  
+  .popup:target {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .popup-content {
+    background: #fff;
+    width: 320px;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    animation: fadeInPopup 0.4s ease;
+  }
+  
+  .popup-content img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    text-decoration: none;
+    font-size: 26px;
+    color: #999;
+  }
+  
+  .close-btn:hover {
+    color: black;
+  }
+  
+
+.IG{
+    transition: 0.5s;
+    border-radius: 5px;
+    padding: 5px;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+.FB{
+    transition: 0.5s;
+    background-color: #1877f2;
+    border-radius: 5px;
+    padding: 5px;
+}
+.IG:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.FB:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.drawing{
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    background: linear-gradient(90deg, #00c6fb, #005bea, #7f00ff);
+}
+
+.gallery-header {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .gallery-header h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .gallery-header p {
+    color: #666;
+    font-size: 18px;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item img:hover {
+    transform: scale(1.05);
+  }
+  
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .skill-item {
+    text-align: center;
+    flex: 1 1 120px;
+    padding: 10px;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skill-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .skill-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+    display: block;
+    color: #4f84e7;
+  }
+  
+  .skill-item:hover {
+    background-color: #e6f4ff;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  }
+  
