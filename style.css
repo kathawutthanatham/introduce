@@ -70,7 +70,7 @@
     color: #BDC3C7; 
   }
   
-  .introduce img {
+  .imgc{
     width: 200px;
     height: 200px;
     border-radius: 100%;
@@ -185,3 +185,18 @@
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
   }
   
+
+.re{
+    margin-top: 15px;
+    width: 350px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color:white;
+}
+.re2{
+    margin-top: 15px;
+    width: 200px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color:white;
+}
